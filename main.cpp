@@ -946,7 +946,8 @@ Reset( )
 	for(int i = 0; i < NUMPARTICLES; i++){
         struct particle p = Particles[i];
         p.x = p.x0; p.y = p.y0; p.z = p.z0;
-        p.vx = p.vx0; p.vy = p.vy0 + (-9.8*Time); p.vz = p.vz0;        
+        p.vx = p.vx0; p.vy = p.vy0 + (-9.8*Time); 
+        p.vz = p.vz0;        
         p.r = p.r0; p.g = p.g0; p.b = p.b0;
         Particles[i] = p;
     }
